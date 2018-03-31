@@ -1,106 +1,414 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bootstrap classes</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
-        <link href="jquerywebsitecss/commonbootstrapcss.css" rel="stylesheet">
-          <link rel="stylesheet" href="main.css">
-     
-              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-              </head>
-              <body>
-                <div class="container margin-bottom-top font-bold">
-                  <h1>Commom useful Bootstrap Classes</h1>
-                </div>
-                <h2>Container</h2>
-                <div class="container background-diff margin-bottom-top">
-                  <p>Container has fixed width</p>
-                </div>
-                <h2>Container-fluid</h2>
-                <div class="container-fluid background-diff margin-bottom-top">
-                  <p>Container fluid has takes full width of the viewport</p>
-                </div>
-                <div class="row margin-bottom-top" style="margin-left:2vw;">
-                  <p class="margin-bottom-top-small font-bold">Bootstrap grid has 12 colums in a row</p>
-                  <p class="margin-bottom-top-small">xs is used for devices with resolution less than 768px</p>
-                  <p class="margin-bottom-top-small">sm is used for devices with resolution greater than 768px and less than 992px</p>
-                  <p class="margin-bottom-top-small">md is used for devices with resolution greater than 992px and less than 1200px</p>
-                  <p>lg is used for devices with resolution greater than 1200px</p>
-                  <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
-                  <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
-                  <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
-                </div>
-              </div>
-              <!--  <div class="container margin-bottom-top"><img src="work/newyork.jpeg" class="img-rounded" ></div>-->
-              <div class="container margin-bottom-top">
-                <h2>Jumbotron</h2>
-                <div class="jumbotron">
-                  <p>A jumbotron indicates a big box for calling extra attention to some special content or information.
 
-A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it. </p>
-                </div>
-                <div class="container margin-bottom-top">
-                  <h2>Well</h2>
-                  <div class="well">The .well class adds a rounded border around an element with a gray background color and some padding:</div>
-                </div>
-                <h2>Navbar</h2>
-                <p>Bootstrap has predefined navbar class</p>
-                <nav class="navbar navbar-default">
-                  <div class="container-fluid margin-bottom-top">
-                    <div class="navbar-header">
-                      <a class="navbar-brand" href="#">WebSiteName</a>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+      <title>Saisree - Personal Portfolio HTML Template</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description" content="Personal Portfolio HTML Template">
+          <meta name="keywords" content="Personal, Portfolio, HTML Template, Freelancer">
+            <meta name="author" content="peng lam">
+              <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+                <!-- Latest compiled and minified CSS -->
+                <link rel="stylesheet" href="portfoliocss/bootstrap.min.css">
+                  <link rel="stylesheet" href="portfoliocss/bootstrap.css">
+                    <!-- Animate css -->
+                    <link rel="stylesheet" href="portfoliocss/animate.css">
+                      <!-- Fontawesome css -->
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <!-- Main css -->
+                        <link rel="stylesheet" href="portfoliocss/portfoliostyle.css">
+                          <!-- SCRIPTS -->
+                          <!-- jQuery library -->
+                          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                          <!-- Latest compiled JavaScript -->
+                          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                          <!-- Magnific Popup core JS file -->
+                          <script src="portfoliojs/jquery.magnific-popup.js"></script>
+                          <script src="portfoliojs/parallax.js"></script>
+                          <script src="portfoliojs/wow.min.js"></script>
+                          <script>
+              new WOW().init();
+              </script>
+                          <script src="portfoliojs/custom.js"></script>
+                          <script src="portfoliojs/smooth-scroll.js"></script>
+                        </head>
+                        <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+                          <!-- PRE LOADER -->
+                          <div class="preloader">
+                            <div class="sk-spinner sk-spinner-wordpress">
+                              <span class="sk-inner-circle"></span>
+                            </div>
+                          </div>
+                          <!-- Navigation Section -->
+                          <div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+                            <div class="container">
+                              <!-- NAVBAR HEADER -->
+                              <div class="navbar-header">
+                                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                  <span class="icon icon-bar"></span>
+                                  <span class="icon icon-bar"></span>
+                                  <span class="icon icon-bar"></span>
+                                </button>
+                                <!-- lOGO TEXT HERE -->
+                                <a href="FinalPortfolio.html" class="navbar-brand">
+                                  <span class="font-playfair">sai</span>sree.
+                                </a>
+                              </div>
+                              <!-- NAVIGATION LINKS -->
+                              <div class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                  <li>
+                                    <a href="#home" class="smoothScroll">Home</a>
+                                  </li>
+                                  <li>
+                                    <a href="#about" class="smoothScroll">About</a>
+                                  </li>
+                                  <li>
+                                    <a href="#Experience" class="smoothScroll">Experience</a>
+                                  </li>
+                                  <li>
+                                    <a href="#Education" class="smoothScroll">Education</a>
+                                  </li>
+                                  <li>
+                                    <a href="#Interests" class="smoothScroll">Interests</a>
+                                  </li>
+                                  <li>
+                                    <a href="#contact" class="smoothScroll">Contact</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Home Section -->
+                          <section id="home" class="parallax-section">
+                            <div id="particles-js"></div>
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                  <div class="home-thumb">
+                                    <h3 class="wow fadeInUp" data-wow-delay="0.4s">hello,I am 
+                                      <span class="font-playfair">Saisree Vennapusa</span>
+                                    </h3>
+                                    <h1 class="wow fadeInUp" data-wow-delay="1.0s">I 
+                                      <span class="font-playfair">Design</span> websites.
+                                    </h1>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                          <!-- About Section -->
+                          <section id="about" class="parallax-section">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-5 col-sm-6">
+                                  <div class="wow fadeInUp about-text" data-wow-delay="0.4s">
+                                    <h2>Hello, that's me!</h2>
+                                    <div>
+                                      <h4 class="font-playfair">I'm 22 years old passionate Developer focused on, web 
+                                        <strong>design</strong> and web development.
+                                      </h4>
+                                      <h4 class="font-playfair">Nothing brings me more pleasure than making something out of nothing.Even when the results are far from my ideal expectations.I find the whole ceremony of creativity completely enthralling.</h4>
+                                      <h4 class="font-playfair">I develop and design 
+                                        <a href="#">Functional</a>, 
+                                        <a href="#">Creative</a> and 
+                                        <a href="#">Usability </a>oriented websites.
+                                      </h4>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-offset-1 col-md-6 col-sm-6">
+                                  <!-- ABOUT IMAGE HERE -->
+                                  <div class="wow fadeInUp about-image" data-wow-delay="1.2s">
+                                    <img src="Images/portfoliopic1.jpeg" class="img-responsive" alt="">
+                                      <h4>
+                                        <span class="font-playfair">sai</span>sree - Passionate Developer
+                                      </h4>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
+                            <!-- Experience Section -->
+                            <section id="Experience" class="parallax-section" style="padding-bottom:29px;padding-top: 29px;">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-12 col-sm-12">
+                                    <!-- SECTION TITLE -->
+                                    <div class="section-title">
+                                      <h2>Experience.</h2>
+                                      <p class="font-playfair">MVC Architecture, web design and front-end development.</p>
+                                    </div>
+                                  </div>
+                                  <div style="=clear: both;">
+                                    <div class="wow fadeInUp col-md-9 col-sm-9" data-wow-delay="0.4s">
+                                      <!-- WORK THUMB -->
+                                      <div class="work-thumb">
+                                        <h4 class="font-playfair font-bold">Tata Consultancy Services</h4>
+                                        <div class="font-playfair line-height font-size">● I have worked with 3 different projects (
+                                          <span class="font-bold">Apollo , DESS , Accessibility , Vanguard</span>).
+                                        </div>
+                                        <div class="font-playfair line-height font-size">● Developed rich skills in working with front-end web technologies like HTML,CSS
+Javascript,Bootstrap and Jquery.</div>
+                                        <div class="font-playfair line-height font-size">● Developed number of screens across various projects for multiple clients</div>
+                                        <div class="font-playfair line-height font-size">● Gained a lot of knowledge in debugging various issues related to responsiveness,
+alignments in desktop environment.</div>
+                                        <div class="font-playfair line-height font-size">● Good understanding on MVC Architecture in Spring Framework.</div>
+                                        <div class="font-playfair line-height font-size">● Hands on experience in writing JUnit tests and cucumber testing framework.</div>
+                                        <div class="font-playfair line-height font-size">● Basic knowledge in Typescript and Angular.</div>
+                                      </div>
+                                    </div>
+                                    <div class="wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.8s">
+                                      <!-- WORK THUMB -->
+                                      <div class="work-thumb">
+                                        <h4 class="font-playfair">June 2016 - Present</h4>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div style="clear: both;">
+                                    <div class="wow fadeInUp col-md-9 col-sm-9" data-wow-delay="0.8s">
+                                      <!-- WORK THUMB -->
+                                      <div class="work-thumb">
+                                        <h4 class="font-playfair font-bold">Hewlett-Packard​ ​(HP)​</h4>
+                                        <h4 class="font-playfair font-size font-bold">Java Intern</h4>
+                                        <div class="font-playfair line-height font-size">● E-commerce platform for buying and selling of books for the convenience of students
+in the campus developed using Core Java, Swing and MySQL.</div>
+                                        <div class="font-playfair line-height font-size">●Worked in a team of four for building this end to end application.</div>
+                                        <div class="font-playfair line-height font-size">● Developed various front end use cases like login page,books page etc..,using Swing</div>
+                                        <div class="font-playfair line-height font-size">● Built back end schema in MySQL Database.</div>
+                                        <div class="font-playfair line-height font-size">● Implemented CRUD Operations,Search using Core Java and JDBC Connections.</div>
+                                      </div>
+                                    </div>
+                                    <div class="wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.8s">
+                                      <!-- WORK THUMB -->
+                                      <div class="work-thumb">
+                                        <h4 class="font-playfair">June 2015</h4>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
+                            <!-- Education Section -->
+                            <section id="Education" class="parallax-section" style="background: white;padding-top: 80px;padding-bottom: 40px;">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-12 col-sm-12">
+                                    <!-- SECTION TITLE -->
+                                    <div class="section-title">
+                                      <h2>Education.</h2>
+                                    </div>
+                                  </div>
+                                  <div style="=clear: both;">
+                                    <div class="wow fadeInUp col-md-9 col-sm-9" data-wow-delay="0.4s">
+                                      <!-- WORK THUMB -->
+                                      <div class="work-thumb" style="padding-bottom: 40px;">
+                                        <h4 class="font-playfair font-bold">Gitam University</h4>
+                                        <div class="font-playfair line-height font-size">Bachelor of computer technology</div>
+                                        <div class="font-playfair line-height font-size">CGPA - 8.76 </div>
+                                      </div>
+                                    </div>
+                                    <div class="wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.8s">
+                                      <!-- WORK THUMB -->
+                                      <div class="work-thumb">
+                                        <h4 class="font-playfair font-size">June 2012 - April 2016</h4>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div style="=clear: both;">
+                                    <div class="wow fadeInUp col-md-9 col-sm-9" data-wow-delay="0.4s">
+                                      <!-- WORK THUMB -->
+                                      <div class="work-thumb" style="padding-bottom: 40px;">
+                                        <h4 class="font-playfair font-bold">Computer Society of India</h4>
+                                        <div class="font-playfair line-height font-size">Active member of CSI</div>
+                                      </div>
+                                    </div>
+                                    <div class="wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.8s">
+                                      <!-- WORK THUMB -->
+                                      <div class="work-thumb">
+                                        <h4 class="font-playfair font-size">June 2015 - April 2016</h4>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div style="=clear: both;">
+                                    <div class="wow fadeInUp col-md-9 col-sm-9" data-wow-delay="0.4s">
+                                      <!-- WORK THUMB -->
+                                      <div class="work-thumb" style="padding-bottom: 40px;">
+                                        <h4 class="font-playfair font-bold">High School</h4>
+                                        <div class="font-playfair line-height font-size">CGPA - 9.39</div>
+                                      </div>
+                                    </div>
+                                    <div class="wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.8s">
+                                      <!-- WORK THUMB -->
+                                      <div class="work-thumb">
+                                        <h4 class="font-playfair font-size">June 2010 - April 2012</h4>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+                              <!-- Interests Section -->
+                              <section id="Interests" class="parallax-section" style="background: transparent;padding-top: 38px;padding-bottom: 134px;">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                      <!-- SECTION TITLE -->
+                                      <div class="section-title">
+                                        <h2 class="text-center" style="padding-top: 40px">Interests</h2>
+                                      </div>
+                                    </div>
+                                    <div style="=clear: both;">
+                                      <div class="wow fadeInUp" data-wow-delay="1.2s">
+  <div class="col-lg-3 col-md-5 text-center">
+            <div class="service-box mt-5 mx-auto">
+<img src="Images/html.png" style="width: 68px;">
+              
+              <div class="text-muted mb-0">HTML</div>
+            </div>
+          </div>
+           <div class="col-lg-3 col-md-5 text-center">
+            <div class="service-box mt-5 mx-auto">
+<img src="Images/css.jpg" style="width: 68px;">
+              
+              <div class="text-muted mb-0">CSS</div>
+            </div>
+          </div>
+              <div class="col-lg-3 col-md-5 text-center">
+            <div class="service-box mt-5 mx-auto">
+<img src="Images/bootstrap.jpg" style="width: 68px;">
+              
+              <div class="text-muted mb-0">Bootstrap</div>
+            </div>
+          </div>
+              <div class="col-lg-3 col-md-5 text-center">
+            <div class="service-box mt-5 mx-auto">
+<img src="Images/javascript.png" style="width: 70px;">
+              
+              <div class="text-muted mb-0">Javascript</div>
+            </div>
+          </div>
+                <div class="col-lg-3 col-md-5 text-center">
+            <div class="service-box mt-5 mx-auto">
+<img src="Images/jquery.png" style="width: 78px;">
+              
+              <div class="text-muted mb-0">Jquery</div>
+            </div>
+          </div>
+                <div class="col-lg-3 col-md-5 text-center">
+            <div class="service-box mt-5 mx-auto">
+<img src="Images/angular.png" style="width: 78px;">
+              
+              <div class="text-muted mb-0">Angular</div>
+            </div>
+          </div>
+                <div class="col-lg-3 col-md-5 text-center">
+            <div class="service-box mt-5 mx-auto">
+<img src="Images/node.png" style="width: 78px;">
+              
+              <div class="text-muted mb-0">Node</div>
+            </div>
+          </div>
+                <div class="col-lg-3 col-md-5 text-center">
+            <div class="service-box mt-5 mx-auto">
+<img src="Images/mongo.png" style="width: 78px;">
+              
+              <div class="text-muted mb-0">MongoDB</div>
+            </div>
+          </div>
+        </div>
+           <div class="col-lg-offset-10 col-lg-2 col-md-offset-10 col-md-2 text-center wow fadeInUp" data-wow-delay="1.4s" style="font-weight: bolder;">
+          ......and many more
+          </div>
+                                      <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="1.6s">
+                                        <!-- WORK THUMB -->
+                                        <div class="work-thumb" style="padding-bottom: 40px;padding-top: 40px;padding-left: 74px;">
+                                          <div class="font-playfair line-height font-size">Apart from being a web developer,I enjoy most of my time being outdoors playing sports and also i find interest in doing social activities.
+</div>
+                                          <br>
+                                            <div class="font-playfair line-height font-size">When forced indoors, I follow a number of suspense thriller and horror genre movies and television shows,I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the web development world.</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </section>
+                                  <!-- Contact Section -->
+<section id="contact" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <!-- SECTION TITLE -->
+                    <div class="section-title">
+                         <h2 class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="1.2s">Contact</h2>
+                         <p class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="1.4s">let's work together for projects , just send me email here</p>
                     </div>
-                    <ul class="nav navbar-nav">
-                      <li class="active">
-                        <a href="#">Home</a>
-                      </li>
-                      <li>
-                        <a href="#">Page 1</a>
-                      </li>
-                      <li>
-                        <a href="#">Page 2</a>
-                      </li>
-                      <li>
-                        <a href="#">Page 3</a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-                <div class="container margin-bottom-top">
-                  <h2>Offset</h2>
-                  <p>Move columns to the right using .col-sm-offset-* classes. These classes increase the left margin of a column by * columns: </p>
-                  <div class="row">
-                    <div class="col-sm-4 col-sm-offset-2" style="background-color:lavender;">.col-sm-4 .col-sm-offset-2</div>
-                    <div class="col-sm-6" style="background-color:lavenderblush;">.col-sm-8</div>
-                  </div>
-                </div>
-                <div class="container margin-bottom-top">
-                  <h2>Push And Pull</h2>
-                  <p>Change the order of the grid columns with .col-sm-push-* and .col-sm-pull-* classes: </p>
-                  <div class="row">
-                    <div class="col-sm-4 col-sm-push-8" style="background-color:lavender;">.col-sm-4 .col-sm-push-8</div>
-                    <div class="col-sm-8 col-sm-pull-4" style="background-color:lavenderblush;">.col-sm-8 .col-sm-pull-4</div>
-                  </div>
-                </div>
-                <div class="container margin-bottom-top">
-                  <h2>Hidden classes</h2>
-                  <p>Opon Resizing the bowser we can see the effect of hidden classes</p>
-                  <h3 class="visible-xs bg-danger">This text is shown only on an EXTRA SMALL screen.</h3>
-                  <h3 class="visible-sm bg-info">This text is shown only on a SMALL screen.</h3>
-                  <h3 class="visible-md bg-warning">This text is shown only on a MEDIUM screen.</h3>
-                  <h3 class="visible-lg bg-success">This text is shown only on a LARGE screen.</h3>
-                </div>
-                <div class="container margin-bottom-top">
-                  <h2>Visible classes</h2>
-                  <p>Opon Resizing the bowser we can see the effect of hidden classes</p>
-                  <h3 class="visible-xs bg-danger">This text is shown only on an EXTRA SMALL screen.</h3>
-                  <h3 class="visible-sm bg-info">This text is shown only on a SMALL screen.</h3>
-                  <h3 class="visible-md bg-warning">This text is shown only on a MEDIUM screen.</h3>
-                  <h3 class="visible-lg bg-success">This text is shown only on a LARGE screen.</h3>
-                </div>
-              </body>
-            </html>
+               </div>
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="1.6s">
+                    <!-- CONTACT FORM HERE -->
+                    <form id="contact-form" role="form">
+
+                         <!-- IF MAIL SENT SUCCESSFULLY -->
+
+                         <div class="col-md-4 col-sm-4">
+                              <input type="text" class="form-control" id="cf-name" name="cf-name" placeholder="Name">
+                         </div>
+
+                         <div class="col-md-4 col-sm-4">
+                              <input type="email" class="form-control" id="cf-email" name="email" placeholder="Email">
+                         </div>
+
+                         <div class="col-md-4 col-sm-4">
+                              <input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Subject">
+                         </div>
+
+                         <div class="col-md-12 col-sm-12">
+                              <textarea class="form-control" rows="7" id="cf-message" name="cf-message" placeholder="Message"></textarea>
+                         </div>
+
+                         <div class="col-md-3 col-sm-6">
+                              <button type="submit" class="form-control" id="cf-submit" name="submit">Send Message</button>
+                         </div>
+                   </form>
+               </div>
+
+          </div>
+     </div>
+</section>
+<!--contact section ende-->
+                                  <!-- Footer Section -->
+                                  <footer id="footer">
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col-md-23 col-sm-23">
+                                          <div class="wow fadeInUp footer-copyright" data-wow-delay="0.2s">
+                                            <p class="font-playfair">© 2018 Saisree Template | 
+                                              <span class="glyphicon glyphicon-earphone">9652586028</span>.
+                                            </p>
+                                            <p class="font-playfair">Mail to | 
+                                              <span class="glyphicon glyphicon-envelope">saisreereddy.v@gmail.com.</span>
+                                            </p>
+                                          </div>
+                                          <!-- SOCIAL ICONS -->
+                                          <ul class="social-icon">
+                                            <li class="wow fadeInUp" data-wow-delay="0.4s">
+                                              <a href="#" class="fa fa-twitter"></a>
+                                            </li>
+                                            <li class="wow fadeInUp" data-wow-delay="0.6s">
+                                              <a href="#" class="fa fa-dribbble"></a>
+                                            </li>
+                                            <li class="wow fadeInUp" data-wow-delay="0.8s">
+                                              <a href="#" class="fa fa-linkedin"></a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </footer>
+                              <script src="portfoliojs/particles.js"></script>
+                                  <script src="portfoliojs/particles.min.js"></script>
+                                  <script src="portfoliojs/app.js"></script>
+                                </body>
+                              </html>
