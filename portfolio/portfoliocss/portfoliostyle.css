@@ -1,0 +1,406 @@
+/*--------------------------------------------------------------- Project Name: Branten - Personal Portfolio HTML Template File Name: style.css Author: Peng Lam Author URI: http://khaitawng.com Version: 1.0.0 ------------------------------------------------------------------*/
+/*---------------------------------------------------------------- // Table of contents // ody Body 0. Typography 1. Buttons 2. General 3. Preloader 4. Navigation section 5. Home section 6. About section 7. Service section 8. Divider section 9. Work section 10. Contact section 11. Footer section 12. Social icon 13. Mobile Responsive styles ------------------------------------------------------------------*/
+ @import url('http://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+ @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+ body {
+     background:peachpuff;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-style: normal;
+     font-weight: 400;
+     overflow-x: hidden;
+}
+/*--------------------------------------- 0 Typorgraphy -----------------------------------------*/
+ h1,h2,h3,h4,h5,h6 {
+     font-family: 'Source Sans Pro', sans-serif;
+     font-style: normal;
+     font-weight: bold;
+     letter-spacing: 0px;
+}
+ h1 {
+     font-size: 114px;
+     font-weight: 300;
+}
+ h2 {
+     font-size: 4rem;
+     line-height: 52px;
+     margin-top: 0px;
+}
+ h3 {
+     border-right: 4px solid white;
+     border-left: 4px solid white;
+     display: inline-block;
+     font-size: 16px;
+     font-weight: 300;
+     line-height: 32px;
+     letter-spacing: 12px;
+     text-transform: uppercase;
+     padding: 0px 22px 0px 32px;
+}
+ h4 {
+     font-size: 18px;
+     font-weight: 300;
+     line-height: 32px;
+}
+ h5 {
+     letter-spacing: 0.5px;
+}
+ p {
+     color: #777;
+     font-size: 14px;
+     font-weight: 300;
+     line-height: 28px;
+     letter-spacing: 0.2px;
+}
+ .font-playfair {
+     font-family: 'Playfair Display', sans-serif;
+     font-weight: 300;
+     color:black;
+}
+/*--------------------------------------- 1 Buttons -----------------------------------------*/
+ .btn-success:focus {
+     background-color: #000;
+     border-color: transparent;
+}
+ .section-btn {
+     background-color: #000;
+     border: 3px solid transparent;
+     border-radius: 100px;
+     color: #ffffff;
+     font-size: 13px;
+     font-weight: bold;
+     letter-spacing: 1.6px;
+     padding: 12px 36px;
+     margin-top: 22px;
+     -webkit-transition: all ease-in-out 0.4s;
+     transition: all ease-in-out 0.4s;
+     text-transform: uppercase;
+}
+ .section-btn:focus, .section-btn:hover {
+     background: transparent;
+     border-color: #000;
+     color: #000;
+}
+/*--------------------------------------- 2 General -----------------------------------------*/
+ html{
+     -webkit-font-smoothing: antialiased;
+}
+ a {
+     color: #4d638c;
+     -webkit-transition: 0.5s;
+     transition: 0.5s;
+     text-decoration: none !important;
+}
+ a:hover, a:active, a:focus {
+     color: #4d638c;
+     outline: none;
+}
+ * {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+ *:before, *:after {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+ .parallax-section {
+     background-attachment: fixed !important;
+     background-size: cover !important;
+}
+ .section-title {
+     position: relative;
+     padding-bottom: 20px;
+}
+ #about, #service, #divider, #work, #contact {
+     background: #ffffff;
+     box-shadow:0 40px 100px rgba(0,0,0,.2);
+     padding-top: 100px;
+     padding-bottom: 100px;
+     position: relative;
+}
+ #service, #contact, footer {
+     text-align: center;
+}
+/*--------------------------------------- 3 Preloader section -----------------------------------------*/
+ .preloader {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 99999;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: center;
+     align-items: center;
+     background: none repeat scroll 0 0 #ffffff;
+}
+ .sk-spinner-wordpress.sk-spinner {
+     background-color: #000000;
+     width: 38px;
+     height: 1px;
+     position: relative;
+     -webkit-animation: sk-innerCircle 1s linear infinite;
+     animation: sk-innerCircle 1s linear infinite;
+}
+ .sk-spinner-wordpress .sk-inner-circle {
+     display: block;
+     background-color: #ffffff;
+     width: 16px;
+     height: 16px;
+     position: absolute;
+     border-radius: 8px;
+     top: 5px;
+     left: 5px;
+}
+ @keyframes sk-innerCircle {
+     0% {
+         -webkit-transform: rotate(0);
+         transform: rotate(0);
+    }
+     100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+    }
+}
+/*--------------------------------------- 4 Navigation section -----------------------------------------*/
+ .custom-navbar {
+     border: none;
+     margin-bottom: 0;
+     background-color: #ffffff;
+     padding: 18px 0px;
+}
+ .custom-navbar .navbar-brand {
+     color: #000;
+     font-weight: bold;
+     font-size: 3rem;
+     line-height: 35px;
+}
+ .custom-navbar .nav li a {
+     font-size: 14px;
+     color: #777;
+     line-height: 40px;
+     padding-right: 22px;
+     padding-left: 22px;
+     -webkit-transition: all ease-in-out 0.4s;
+     transition: all ease-in-out 0.4s;
+}
+ .custom-navbar .nav li a:hover {
+     background: transparent;
+     color: #000;
+}
+ .custom-navbar .navbar-nav > li > a:hover, .custom-navbar .navbar-nav > li > a:focus {
+     background-color: transparent;
+}
+ .custom-navbar .nav li.active > a {
+     background-color: transparent;
+     color: #000;
+}
+ .custom-navbar .navbar-toggle {
+     border: none;
+     padding-top: 10px;
+}
+ .custom-navbar .navbar-toggle {
+     background-color: transparent;
+}
+ .custom-navbar .navbar-toggle .icon-bar {
+     background: #000;
+     border-color: transparent;
+}
+ @media(min-width:768px) {
+     .custom-navbar {
+         padding: 22px 0;
+         border-bottom: 0;
+         background: 0 0;
+    }
+     .custom-navbar.top-nav-collapse {
+         background: #ffffff;
+         box-shadow:0 40px 100px rgba(0,0,0,.2);
+         padding: 0px 0;
+    }
+}
+/*--------------------------------------- 5 Home section -----------------------------------------*/
+ #home {
+     background: transparent;
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     height: 100vh;
+     position: relative;
+     text-align: center;
+}
+ #particles-js {
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     top: 0;
+     left: 0;
+}
+/*--------------------------------------- 6 About section -----------------------------------------*/
+ #about .about-text {
+     padding-top: 42px;
+}
+ #about .about-text h4 {
+     padding-top: 12px;
+}
+ #about .about-text a {
+     color: #000;
+     font-weight: bold;
+}
+ #about .about-image img {
+     border-radius: 5px;
+     padding-right: 12px;
+}
+/*--------------------------------------- 7 Service section -----------------------------------------*/
+ #service p {
+     font-size: 18px;
+     line-height: 30px;
+}
+ #service .service-thumb {
+     padding: 42px 22px;
+}
+ #service .service-thumb .fa {
+     font-size: 82px;
+     margin-bottom: 12px;
+}
+/*--------------------------------------- 9 Work section -----------------------------------------*/
+ #work .work-thumb {
+     border-radius: 5px;
+     margin-bottom: 26px;
+     padding: 0;
+     overflow: hidden;
+     position: relative;
+     top: 0;
+     -webkit-transition: all ease-in-out 0.4s;
+     transition: all ease-in-out 0.4s;
+}
+ #work .work-thumb:hover {
+     background: #ffffff;
+     box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+     top: -5px;
+}
+ #work .work-thumb img {
+     border-radius: 5px;
+}
+/*--------------------------------------- 10 Contact section -----------------------------------------*/
+ #contact .text-success, #contact .text-danger {
+     display: none;
+}
+ #contact .form-control {
+     border: 2px solid #f0f0f0;
+     border-radius: 5px;
+     box-shadow: none;
+     font-size: 18px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     -webkit-transition: all ease-in-out 0.4s;
+     transition: all ease-in-out 0.4s;
+}
+ #contact .form-control:focus {
+     border-color: #999;
+}
+ #contact input {
+     height: 55px;
+}
+ #contact button#cf-submit {
+     border: 3px solid #333;
+     border-radius: 40px;
+     color: #333;
+     font-family: 'Playfair Display', sans-serif;
+     height: 55px;
+}
+ #contact button#cf-submit:hover {
+     background: #333;
+     color: #ffffff;
+}
+/*--------------------------------------- 11 Footer section -----------------------------------------*/
+ footer {
+     background: peachpuff;
+     color: #ffffff;
+     padding-top: 20px;
+     padding-bottom: 20px;
+}
+ footer .footer-copyright p {
+     font-size: 14px;
+     letter-spacing: 0.5px;
+}
+/*--------------------------------------- 12 Social Icon -----------------------------------------*/
+ .social-icon {
+     position: relative;
+     padding: 0;
+     margin: 0;
+}
+ .social-icon li {
+     display: inline-block;
+     list-style: none;
+}
+ .social-icon li a {
+     color: #999;
+     cursor: pointer;
+     font-size: 16px;
+     text-decoration: none;
+     -webkit-transition: all ease-in-out 0.4s;
+     transition: all ease-in-out 0.4s;
+     text-align: center;
+     vertical-align: middle;
+     position: relative;
+     margin: 22px 14px 22px 14px;
+}
+ .social-icon li a:hover {
+     color: #ffffff;
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+}
+/*--------------------------------------- 13 Mobile Responsive styles -----------------------------------------*/
+ @media (max-width: 980px) {
+     h1 {
+        font-size: 92px;
+    }
+}
+ @media (max-width: 768px) {
+     h1 {
+        font-size: 78px;
+    }
+     .custom-navbar {
+        background-color: #ffffff;
+        box-shadow:0 40px 100px rgba(0,0,0,.2);
+    }
+     .custom-navbar .navbar-brand {
+        line-height: 15px;
+    }
+     .custom-navbar .nav li a {
+        line-height: 25px;
+    }
+}
+ @media (max-width: 767px) {
+     #about .about-image {
+        padding-top: 32px;
+    }
+}
+ @media (max-width: 650px) {
+     h1 {
+        font-size:42px
+    }
+     h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+     h3 {
+        font-size: 12px;
+        letter-spacing: 8px;
+        padding: 0px 10px 0px 18px;
+    }
+}
+ .font-bold{
+     font-weight: bold;
+}
+ .line-height{
+     line-height: 29px;
+}
+ .font-size{
+     font-size: 1.1em;
+}

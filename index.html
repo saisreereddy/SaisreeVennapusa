@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bootstrap classes</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link href="jquerywebsitecss/commonbootstrapcss.css" rel="stylesheet">
+          <link rel="stylesheet" href="main.css">
+     
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+              </head>
+              <body>
+                <div class="container margin-bottom-top font-bold">
+                  <h1>Commom useful Bootstrap Classes</h1>
+                </div>
+                <h2>Container</h2>
+                <div class="container background-diff margin-bottom-top">
+                  <p>Container has fixed width</p>
+                </div>
+                <h2>Container-fluid</h2>
+                <div class="container-fluid background-diff margin-bottom-top">
+                  <p>Container fluid has takes full width of the viewport</p>
+                </div>
+                <div class="row margin-bottom-top" style="margin-left:2vw;">
+                  <p class="margin-bottom-top-small font-bold">Bootstrap grid has 12 colums in a row</p>
+                  <p class="margin-bottom-top-small">xs is used for devices with resolution less than 768px</p>
+                  <p class="margin-bottom-top-small">sm is used for devices with resolution greater than 768px and less than 992px</p>
+                  <p class="margin-bottom-top-small">md is used for devices with resolution greater than 992px and less than 1200px</p>
+                  <p>lg is used for devices with resolution greater than 1200px</p>
+                  <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+                  <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+                  <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+                </div>
+              </div>
+              <!--  <div class="container margin-bottom-top"><img src="work/newyork.jpeg" class="img-rounded" ></div>-->
+              <div class="container margin-bottom-top">
+                <h2>Jumbotron</h2>
+                <div class="jumbotron">
+                  <p>A jumbotron indicates a big box for calling extra attention to some special content or information.
+
+A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it. </p>
+                </div>
+                <div class="container margin-bottom-top">
+                  <h2>Well</h2>
+                  <div class="well">The .well class adds a rounded border around an element with a gray background color and some padding:</div>
+                </div>
+                <h2>Navbar</h2>
+                <p>Bootstrap has predefined navbar class</p>
+                <nav class="navbar navbar-default">
+                  <div class="container-fluid margin-bottom-top">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="#">WebSiteName</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                      <li class="active">
+                        <a href="#">Home</a>
+                      </li>
+                      <li>
+                        <a href="#">Page 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Page 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Page 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                <div class="container margin-bottom-top">
+                  <h2>Offset</h2>
+                  <p>Move columns to the right using .col-sm-offset-* classes. These classes increase the left margin of a column by * columns: </p>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-2" style="background-color:lavender;">.col-sm-4 .col-sm-offset-2</div>
+                    <div class="col-sm-6" style="background-color:lavenderblush;">.col-sm-8</div>
+                  </div>
+                </div>
+                <div class="container margin-bottom-top">
+                  <h2>Push And Pull</h2>
+                  <p>Change the order of the grid columns with .col-sm-push-* and .col-sm-pull-* classes: </p>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-push-8" style="background-color:lavender;">.col-sm-4 .col-sm-push-8</div>
+                    <div class="col-sm-8 col-sm-pull-4" style="background-color:lavenderblush;">.col-sm-8 .col-sm-pull-4</div>
+                  </div>
+                </div>
+                <div class="container margin-bottom-top">
+                  <h2>Hidden classes</h2>
+                  <p>Opon Resizing the bowser we can see the effect of hidden classes</p>
+                  <h3 class="visible-xs bg-danger">This text is shown only on an EXTRA SMALL screen.</h3>
+                  <h3 class="visible-sm bg-info">This text is shown only on a SMALL screen.</h3>
+                  <h3 class="visible-md bg-warning">This text is shown only on a MEDIUM screen.</h3>
+                  <h3 class="visible-lg bg-success">This text is shown only on a LARGE screen.</h3>
+                </div>
+                <div class="container margin-bottom-top">
+                  <h2>Visible classes</h2>
+                  <p>Opon Resizing the bowser we can see the effect of hidden classes</p>
+                  <h3 class="visible-xs bg-danger">This text is shown only on an EXTRA SMALL screen.</h3>
+                  <h3 class="visible-sm bg-info">This text is shown only on a SMALL screen.</h3>
+                  <h3 class="visible-md bg-warning">This text is shown only on a MEDIUM screen.</h3>
+                  <h3 class="visible-lg bg-success">This text is shown only on a LARGE screen.</h3>
+                </div>
+              </body>
+            </html>
