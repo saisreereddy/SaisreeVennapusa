@@ -297,6 +297,9 @@ th {
 .glyphicon-envelope:before {
   content: "\2709";
 }
+.glyphicon-phone:before {
+    content: "\e145";
+}
 .glyphicon-pencil:before {
   content: "\270f";
 }
